@@ -11,6 +11,7 @@ body {
   background: linear-gradient(120deg, #f6d365, #fda085);
   color: #fff;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 header {
@@ -148,4 +149,20 @@ select {
 .select:hover::after {
   background: #fff;
   color: #fda085;
+}
+
+@media (max-width: 630px) {
+  form {
+    padding: 0 10px;
+  }
+
+  .todo-input {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .select {
+    max-width: 100px;
+    width: 100%;
+  }
 }
